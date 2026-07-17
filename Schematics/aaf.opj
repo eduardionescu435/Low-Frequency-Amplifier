@@ -1,0 +1,148 @@
+(ExpressProject "aaf"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\biblioteci spice\bc807-25.lib"
+        (Type "EDIF Netlist"))
+      (File "..\biblioteci spice\bc817-25.lib"
+        (Type "EDIF Netlist"))
+      (File "..\biblioteci spice\bc846b.lib"
+        (Type "EDIF Netlist"))
+      (File "..\biblioteci spice\bc856b.lib"
+        (Type "EDIF Netlist"))
+      (File "..\biblioteci spice\opto.lib"
+        (Type "EDIF Netlist")))
+    (NoModify)
+    (File "aaf.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "C:\Users\mirce\Desktop\AAF30\bom.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File "C:\USERS\MIRCE\DESKTOP\AAF26\SIMULARI_AAF\AAF.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\aaf-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aaf-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\aaf-pspicefiles\schematic1\wwwww.sim"
+        (DisplayName "SCHEMATIC1-wwwww")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\aaf-pspicefiles\schematic1\wwwww.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File "..\biblioteci spice\bc807-25.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\biblioteci spice\bc807-25.lib"))
+      (File "..\biblioteci spice\bc817-25.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\biblioteci spice\bc817-25.lib"))
+      (File "..\biblioteci spice\bc846b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\biblioteci spice\bc846b.lib"))
+      (File "..\biblioteci spice\bc856b.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\biblioteci spice\bc856b.lib"))
+      (File "..\biblioteci spice\opto.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\biblioteci spice\opto.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (MLED81
+      (FullPartName "MLED81.Normal")
+      (LibraryName "C:\USERS\MIRCE\DESKTOP\BIBLIOTECI SPICE\OPTO.OLB")
+      (DeviceIndex "0"))
+    (QBC817-25
+      (FullPartName "QBC817-25.Normal")
+      (LibraryName "C:\USERS\MIRCE\DESKTOP\BIBLIOTECI SPICE\BC817-25.OLB")
+      (DeviceIndex "0"))
+    (QBC807-25
+      (FullPartName "QBC807-25.Normal")
+      (LibraryName "C:\USERS\MIRCE\DESKTOP\BIBLIOTECI SPICE\BC807-25.OLB")
+      (DeviceIndex "0"))
+    (QBC856B
+      (FullPartName "QBC856B.Normal")
+      (LibraryName "C:\USERS\MIRCE\DESKTOP\BIBLIOTECI SPICE\BC856B.OLB")
+      (DeviceIndex "0"))
+    (QBC846B
+      (FullPartName "QBC846B.Normal")
+      (LibraryName "C:\USERS\MIRCE\DESKTOP\BIBLIOTECI SPICE\BC846B.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\mirce\Desktop\biblioteci spice")
+  (MPSSessionName "Eduard")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf.dsn")
+      (Path "Design Resources"
+         "C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Outputs"
+         "C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-pspicefiles\schematic1\schematic1.net"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 275"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1655 52 503")
+        (Scroll "-129 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\EDUARD\DESKTOP\NEW FOLDER (2)\SCHEMATICS\AAF.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

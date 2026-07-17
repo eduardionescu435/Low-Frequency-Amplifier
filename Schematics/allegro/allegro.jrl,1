@@ -1,0 +1,50 @@
+\t (00:00:03) allegro 17.2 S025 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Sat Dec 13 23:38:35 2025
+\t (00:00:03)         Host=DINAMO User=Eduard Pid=2672 CPUs=12
+\t (00:00:03) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\d (00:00:06) Design opened: C:/Users/Eduard/Desktop/proiectus/PROIECT_P1/Layout/schema/allegro/LAYOUT.brd
+\i (00:00:06) trapsize 2195
+\i (00:00:06) trapsize 2245
+\i (00:00:07) trapsize 2345
+\i (00:00:07) trapsize 2459
+\i (00:00:07) trapsize 21954
+\i (00:00:07) etchedit 
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in -304.95 1424.95
+\i (00:00:08) trapsize 1229
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out 231.04 1601.98
+\i (00:00:14) trapsize 2459
+\i (00:00:16) open 
+\i (00:00:34) fillin "LAYOUT.brd"
+\t (00:00:34) Opening existing design...
+\i (00:00:34) trapsize 2354
+\d (00:00:35) Design opened: C:/Users/Eduard/Desktop/proiectus/PROIECT_P1/Layout/schema/allegro/LAYOUT.brd
+\i (00:00:35) etchedit 
+\i (00:00:39) status 
+\i (00:00:39) etchedit 
+\i (00:00:59) setwindow form.status
+\i (00:00:59) FORM status refresh  
+\i (00:01:00) FORM status done  
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 1 
+\i (00:01:01) setwindow pcb
+\i (00:01:01) zoom in 406.33 1564.91
+\i (00:01:01) trapsize 1177
+\i (00:01:03) zoom out 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom out 568.78 1289.45
+\i (00:01:03) trapsize 2354
+\i (00:01:03) zoom in 1 
+\i (00:01:03) setwindow pcb
+\i (00:01:03) zoom in 545.24 1077.56
+\i (00:01:03) trapsize 1177
+\i (00:01:06) exit 
+\e (00:01:07) Do you want to save the changes you made to LAYOUT.brd?
+\i (00:01:12) fillin yes 
+\t (00:01:12)     Journal end - Sat Dec 13 23:39:44 2025

@@ -1,0 +1,20 @@
+\t (00:00:04) allegro 17.2 S025 Windows SPB 64-bit Edition
+\t (00:00:04)     Journal start - Sat Dec 13 23:43:00 2025
+\t (00:00:04)         Host=DINAMO User=Eduard Pid=10712 CPUs=12
+\t (00:00:04) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:04) 
+   (00:00:04) Loading axlcore.cxt 
+\t (00:00:04) Opening existing design...
+\d (00:00:07) Design opened: C:/Users/Eduard/Desktop/proiectus/PROIECT_P1/Layout/schema/allegro/LAYOUT.brd
+\i (00:00:07) trapsize 1098
+\i (00:00:07) trapsize 1123
+\i (00:00:07) trapsize 1172
+\i (00:00:07) trapsize 1229
+\i (00:00:07) trapsize 12223
+\i (00:00:08) etchedit 
+\i (00:00:12) open 
+\i (00:00:38) fillin "C:\Users\Eduard\Desktop\New folder (2)\Layout\LAYOUT.brd"
+\i (00:00:38) cd "C:\Users\Eduard\Desktop\New folder (2)\Layout"
+\t (00:00:38) Opening existing design...
+\i (00:00:38) trapsize 1177
+\t (00:00:38)     Journal end - Sat Dec 13 23:43:34 2025

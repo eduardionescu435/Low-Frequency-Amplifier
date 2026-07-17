@@ -1,0 +1,85 @@
+
+**** 12/14/25 10:35:21 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-PSpiceFiles\SCHEMATIC1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc807-25.lib" 
+----------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc817-25.lib" 
+----------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc846b.lib" 
+--------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc856b.lib" 
+--------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Eduard\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AAF
+R_RL         0 N135639  150  
+R_R23         N136303 N135593  1k  
+R_R3         N135501 N1359450  680  
+D_D3         N1355231 N135501 D1N4148 
+R_R17         N170755 N136798  9.1k  
+D_D2         N135511 N1355231 D1N4148 
+V_V2         N135805 0  AC 1
++SIN 0 1500m 1000 0 0 0
+R_R21         N135501 N135505  68  
+R_R19         0 N135739  220k  
+R_R20         N136087 N135593  1k  
+R_R16         0 N136798  1k  
+C_C4         N135739 N135805  4.7u  TC=0,0 
+R_R22         N135511 0  10k  
+V_V1         N135593 0 20Vdc
+X_P2         N135361 N1353832 N135365 POT PARAMS: SET=0.7 VALUE=2k
+V_V3         0 N135501 20Vdc
+D_D1         N135593 N1718681 MLED81
+R_R24         0 N1718681  1.8k  
+R_R25         N135501 N1720421  1.8k  
+D_D4         0 N1720421 MLED81
+C_C5         N135639 N170755  4.7u  TC=0,0 
+Q_Q1         N136087 N135739 N136261 QBC846B 
+Q_Q6         N135361 N136087 N135593 QBC856B 
+Q_Q9         N135501 N135365 N170755 QBC807-25 
+Q_Q8         N135593 N135361 N170755 QBC817-25 
+Q_Q2         N136303 N136798 N136261 QBC846B 
+Q_Q7         N135365 N135511 N135505 QBC846B 
+Q_Q5         N136261 N135511 N1359450 QBC846B 
+Q_Q10         N135361 N1353832 N135365 QBC846B 
+C_C6         N135361 N136087  220p  TC=0,0 
+C_C7         N135639 N170755  4.7u  TC=0,0 
+C_C8         N135739 N135805  4.7u  TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+

@@ -1,0 +1,176 @@
+
+**** 12/14/25 10:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc807-25.lib" 
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc817-25.lib" 
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc846b.lib" 
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/bc856b.lib" 
+.LIB "C:/Users/Eduard/Desktop/New folder (2)/biblioteci spice/opto.lib" 
+* From [PSPICE NETLIST] section of C:\Users\Eduard\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AAF
+R_RL         0 N135639  150  
+R_R23         N136303 N135593  1k  
+R_R3         N135501 N1359450  680  
+D_D3         N1355231 N135501 D1N4148 
+R_R17         N170755 N136798  9.1k  
+D_D2         N135511 N1355231 D1N4148 
+V_V2         N135805 0  AC 1
++SIN 0 1500m 1000 0 0 0
+R_R21         N135501 N135505  68  
+R_R19         0 N135739  220k  
+R_R20         N136087 N135593  1k  
+R_R16         0 N136798  1k  
+C_C4         N135739 N135805  4.7u  TC=0,0 
+R_R22         N135511 0  10k  
+V_V1         N135593 0 20Vdc
+X_P2         N135361 N1353832 N135365 POT PARAMS: SET=0.7 VALUE=2k
+V_V3         0 N135501 20Vdc
+D_D1         N135593 N1718681 MLED81
+R_R24         0 N1718681  1.8k  
+R_R25         N135501 N1720421  1.8k  
+D_D4         0 N1720421 MLED81
+C_C5         N135639 N170755  4.7u  TC=0,0 
+Q_Q1         N136087 N135739 N136261 QBC846B 
+Q_Q6         N135361 N136087 N135593 QBC856B 
+Q_Q9         N135501 N135365 N170755 QBC807-25 
+Q_Q8         N135593 N135361 N170755 QBC817-25 
+Q_Q2         N136303 N136798 N136261 QBC846B 
+Q_Q7         N135365 N135511 N135505 QBC846B 
+Q_Q5         N136261 N135511 N1359450 QBC846B 
+Q_Q10         N135361 N1353832 N135365 QBC846B 
+C_C6         N135361 N136087  220p  TC=0,0 
+C_C7         N135639 N170755  4.7u  TC=0,0 
+C_C8         N135739 N135805  4.7u  TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+**** 12/14/25 10:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MLED81          D1N4148         
+          IS   10.000000E-09    2.682000E-09 
+           N    1.1248          1.836        
+         ISR   10.010000E-21    1.565000E-09 
+         IKF   45.752000E-15     .04417      
+          BV    5.4169        100            
+         IBV   10             100.000000E-06 
+          RS    1.2366           .5664       
+          TT    5.000000E-09   11.540000E-09 
+         CJO   25.000000E-12    4.000000E-12 
+          VJ     .75             .5          
+           M     .3333           .3333       
+
+
+**** 12/14/25 10:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QBC807-25       QBC817-25       QBC846B         QBC856B         
+               PNP             NPN             NPN             PNP             
+       LEVEL    1               1               1               1            
+          IS  108.000000E-15   91.980000E-15   18.220000E-15   20.140000E-15 
+          BF  385.7           338.8           324.4           315.3          
+          NF     .99            1.003            .9932           .9974       
+         VAF   31.29          107.9            82              39.15         
+         IKF     .3603           .4913           .109            .079        
+         ISE   27.130000E-15  446.800000E-18  289.400000E-18    6.578000E-15 
+          NE    1.4             1.65            1.4             1.45         
+          BR   20.57           29.48            8.29            8.68         
+          NR     .9849          1.002            .9931           .9952       
+         VAR   11.62           25              17.9             9.5          
+         IKR     .054            .193            .09             .09         
+         ISC  506.200000E-15    5.109000E-15    9.982000E-12   16.330000E-15 
+          NC    1.295           1.071           1.763           1.15         
+         ISS    0               0               0               0            
+          RB    1               1              10              10            
+         RBM     .5             1               5               5.000000E-06 
+         IRB    1.000000E-06    1.000000E+03    5.000000E-06    5.000000E-06 
+          RE     .1415           .2126           .649            .663        
+          RC     .2623           .143            .7014           .718        
+         CJE   51.140000E-12   38.250000E-12   12.440000E-12   11.350000E-12 
+         VJE     .8911           .7004           .7579           .7071       
+         MJE     .4417           .364            .3656           .3808       
+         CJC   26.560000E-12   12.700000E-12    3.347000E-12    6.395000E-12 
+         VJC     .62             .4431           .5463           .4951       
+         MJC     .4836           .3983           .391            .44         
+        XCJC     .459            .4555           .6193           .6288       
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+         MJS     .333            .333            .333            .333        
+          FC     .99             .905            .979            .9059       
+          TF  735.900000E-12  522.900000E-12  490.800000E-12  654.600000E-12 
+         XTF    1.859         219.7             9.51            5.387        
+         VTF    3.813           3.502           2.927           6.245        
+         ITF     .4393          7.257            .3131           .2108       
+          TR   50.000000E-09   70.000000E-12   90.000000E-09   55.000000E-09 
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.2             2.42            2.42            2.2          
+           D     .52             .87             .87             .52         
+
+
+
+          JOB CONCLUDED
+
+**** 12/14/25 10:47:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\Eduard\Desktop\New folder (2)\Schematics\aaf-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.48
+
